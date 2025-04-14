@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakes by J</title>
+
+    <link rel="icon" href="img/sweet-bakes-icon.png" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#EEEEEE] font-[Courier]">
+
+
+    <!-- navigation bar -->
+    <nav class="bg-[#EEEEEE] shadow-md w-full h-20 flex items-center justify-between px-6 fixed top-0 z-40">
+        
+        <div class="right flex-grow"></div> <!-- this will act as the space to put the div middle in the center -->
+
+        <div class="middle flex items-center space-x-6 ml-20 mr-1">
+            <a href="menu.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">MENU</a>
+            <a href="branches.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">BRANCHES</a>
+            <a href="index.html" class="flex items-center">
+                <img src="img/name.png" class="h-12" alt="sweet bakes by j">
+            </a>
+            <a href="story.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">STORY</a>
+            <a href="faqs.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">FAQs</a>
+        </div>
+
+        <div class="left flex-grow"></div> <!-- this will act as the space to put the div middle in the center -->
+
+        <!-- user profile and cart icons -->
+        <div class="flex space-x-6">
+            <a href="order.html" class="flex items-center">
+                <img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" class="h-6" alt="cart icon">
+            </a>
+            <a href="#" class="flex items-center">
+                <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" class="h-7" alt="user icon">
+            </a>
+        </div>
+
+    </nav>
+
+
+    <!-- menu section -->
+    <section class="p-12 mt-20 bg-[#D4BEE4] flex gap-2">
+
+        <div class="flex-1 rounded-md p-4">
+
+            <div class="menu flex-1">
+
+                <section id="croissant-pastry-header" class="relative w-full mb-8">
+
+                    <div class="container max-w-full h-16 grid grid-cols-2 bg-[#3B1E54] text-white items-center">
+
+                        <button id="croissantHeader" class="text-lg tracking-widest h-full w-full flex items-center justify-center">CROISSANTS</button>
+                        <button id="pastriesHeader" class="text-lg tracking-widest h-full w-full flex items-center justify-center">PASTRIES</button>
+
+                    </div>
+
+                </section>
+
+                <!-- croissant menu preview -->
+                <div id="croissantPreview" class="grid grid-cols-4 gap-4">
+
+                    <div id="croissant1" class="flex flex-col border bg-white rounded-md shadow-md p-4">
+                        <img src="img/croissants/buttered-croissant.png" alt="buttered-croissant" class="h-40 w-full object-cover rounded-md">
+                        <h1 id="item-name" class="item-name mt-4 text-lg font-semibold">Buttered Croissant</h1>
+                        <p id="item-price" class="item-price text-[#3B1E54]">Php 130.00</p>
+                        <input id="item-quantity" type="number" class="item-quantity text-sm my-2 border rounded-md py-2 px-3" min="0" placeholder="Enter Quantity">
+                        <div class="flex justify-end mt-2">
+                            <button class="add-to-order bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] px-3 py-2 rounded-md tracking-wider">Add to order</button>
+                        </div>
+                    </div>
+
+                    <div id="croissant2" class="flex flex-col border bg-white rounded-md shadow-md p-4">
+                        <img src="img/croissants/chocolate-croissant.png" alt="chocolate-croissant" class="h-40 w-full object-cover rounded-md">
+                        <h1 id="item-name" class="item-name mt-4 text-lg font-semibold">Chocolate Croissant</h1>
+                        <p id="item-price" class="item-price text-[#3B1E54]">Php 190.00</p>
+                        <input id="item-quantity" type="number" class="item-quantity text-sm my-2 border rounded-md py-2 px-3" min="0" placeholder="Enter Quantity">
+                        <div class="flex justify-end mt-2">
+                            <button class="add-to-order bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] px-3 py-2 rounded-md tracking-wider">Add to order</button>
+                        </div>
+                    </div>
+
+                    <div id="croissant3" class="flex flex-col border bg-white rounded-md shadow-md p-4">
+                        <img src="img/croissants/strawberry-croissant.png" alt="strawberry-croissant" class="h-40 w-full object-cover rounded-md">
+                        <h1 id="item-name" class="item-name mt-4 text-lg font-semibold">Strawberry Croissant</h1>
+                        <p id="item-price" class="item-price text-[#3B1E54]">Php 350.00</p>
+                        <input id="item-quantity" type="number" class="item-quantity text-sm my-2 border rounded-md py-2 px-3" min="0" placeholder="Enter Quantity">
+                        <div class="flex justify-end mt-2">
+                            <button class="add-to-order bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] px-3 py-2 rounded-md tracking-wider">Add to order</button>
+                        </div>
+                    </div>
+
+                    <div id="croissant4" class="flex flex-col border bg-white rounded-md shadow-md p-4">
+                        <img src="img/croissants/matcha-almond-croissant.png" alt="matcha-almond-croissant" class="h-40 w-full object-cover rounded-md">
+                        <h1 id="item-name" class="item-name mt-4 text-lg font-semibold">Matcha Almond Croissant</h1>
+                        <p id="item-price" class="item-price text-[#3B1E54]">Php 330.00</p>
+                        <input id="item-quantity" type="number" class="item-quantity text-sm my-2 border rounded-md py-2 px-3" min="0" placeholder="Enter Quantity">
+                        <div class="flex justify-end mt-2">
+                            <button class="add-to-order bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] px-3 py-2 rounded-md tracking-wider">Add to order</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- pastries menu preview -->
+                <div id="pastriesPreview" class="grid grid-cols-4 gap-4">
+
+                    <div id="pastry1" class="flex flex-col border bg-white rounded-md shadow-md p-4">
+                        <img src="img/pastries/apple-tart.png" alt="buttered-croissant" class="h-40 w-full object-cover rounded-md">
+                        <h1 id="item-name" class="item-name mt-4 text-lg font-semibold">Apple Tart</h1>
+                        <p id="item-price" class="item-price text-[#3B1E54] mt-7">Php 130.00</p>
+                        <input id="item-quantity" type="number" class="item-quantity text-sm my-2 border rounded-md py-2 px-3" min="0" placeholder="Enter Quantity">
+                        <div class="flex justify-end mt-2">
+                            <button class="add-to-order bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] px-3 py-2 rounded-md tracking-wider">Add to order</button>
+                        </div>
+                    </div>
+
+                    <div id="pastry2" class="flex flex-col border bg-white rounded-md shadow-md p-4">
+                        <img src="img/pastries/chocolate-eclair.png" alt="chocolate-croissant" class="h-40 w-full object-cover rounded-md">
+                        <h1 id="item-name" class="item-name mt-4 text-lg font-semibold">Chocolate Eclair</h1>
+                        <p id="item-price" class="item-price text-[#3B1E54] mt-7">Php 210.00</p>
+                        <input id="item-quantity" type="number" class="item-quantity text-sm my-2 border rounded-md py-2 px-3" min="0" placeholder="Enter Quantity">
+                        <div class="flex justify-end mt-2">
+                            <button class="add-to-order bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] px-3 py-2 rounded-md tracking-wider">Add to order</button>
+                        </div>
+                    </div>
+
+                    <div id="pastry3" class="flex flex-col border bg-white rounded-md shadow-md p-4">
+                        <img src="img/pastries/french-macaron.png" alt="strawberry-croissant" class="h-40 w-full object-cover rounded-md">
+                        <h1 id="item-name" class="item-name mt-4 text-lg font-semibold">French Macarons</h1>
+                        <p id="item-price" class="item-price text-[#3B1E54] mt-7">Php 510.00</p>
+                        <input id="item-quantity" type="number" class="item-quantity text-sm my-2 border rounded-md py-2 px-3" min="0" placeholder="Enter Quantity">
+                        <div class="flex justify-end mt-2">
+                            <button class="add-to-order bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] px-3 py-2 rounded-md tracking-wider">Add to order</button>
+                        </div>
+                    </div>
+
+                    <div id="pastry4" class="flex flex-col border bg-white rounded-md shadow-md p-4">
+                        <img src="img/pastries/matcha-creampuff.png" alt="matcha-almond-croissant" class="h-40 w-full object-cover rounded-md">
+                        <h1 id="item-name" class="item-name mt-4 text-lg font-semibold">Matcha Creampuff</h1>
+                        <p id="item-price" class="item-price text-[#3B1E54] mt-7">Php 330.00</p>
+                        <input id="item-quantity" type="number" class="item-quantity text-sm my-2 border rounded-md py-2 px-3" min="0" placeholder="Enter Quantity">
+                        <div class="flex justify-end mt-2">
+                            <button class="add-to-order bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] px-3 py-2 rounded-md tracking-wider">Add to order</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        <!-- ordered items-->
+        <div class="orderedItems w-80 bg-white border border-gray-200 rounded-md shadow-md p-4">
+
+            <h2 class="text-xl font-semibold mb-4">Ordered Items</h2>
+
+            <div class="orderedList flex flex-col gap-2 h-auto border border-gray-200 p-4 mb-2"></div>
+            
+            <div class="total text-lg font-bold mt-4">Total: </div>
+            <div class="payment mt-4 flex flex-col gap-2">
+                <label for="amount" class="block text-gray-700 text-sm font-bold">Enter the amount here</label>
+                <input type="number" id="amount" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <button class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pay!</button>
+            </div>
+        </div>
+
+
+    </section>
+    
+
+    <!-- receipt section -->
+    <section>
+        <div id="receipt" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div class="bg-white p-8 rounded-lg shadow-lg w-[500px] h-auto text-center font-[Courier]">
+            <h2 class="text-2xl font-bold mb-1">Receipt</h2>
+            <p class="text-xs mb-5 text-[#3B1E54]">Thanks for ordering at Sweet Bakes by J.</p>
+            
+                <div id="receiptDetails" class="text-left mb-4"></div>
+                    <button onclick="window.print()" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white py-2 px-4 rounded mr-2">Print</button>
+                    <button onclick="closeReceipt()" class="bg-gray-300 hover:bg-gray-400 text-black py-2 px-4 rounded">Close</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        //preview sections
+        const croissantButton = document.getElementById('croissantHeader');
+        const pastriesButton = document.getElementById('pastriesHeader');
+        const croissantPreview = document.getElementById('croissantPreview');
+        const pastriesPreview = document.getElementById('pastriesPreview');
+
+        // show croissant preview section and hide pastries preview section on load
+        croissantPreview.style.display = 'grid'; // apply grid layout
+        pastriesPreview.style.display = 'none';
+
+        // event listener when croissant button is clicked
+        croissantButton.addEventListener('click', function() {
+            croissantPreview.style.display = 'grid'; // apply grid layout
+            pastriesPreview.style.display = 'none';
+        });
+
+        // event listener when pastries button is clicked
+        pastriesButton.addEventListener('click', function() {
+            croissantPreview.style.display = 'none';
+            pastriesPreview.style.display = 'grid'; // apply grid layout
+        });
+
+
+
+        // ordered items section
+        const addToOrderButtons = document.querySelectorAll('.add-to-order');
+        const orderedList = document.querySelector('.orderedList');
+        const displayTotal = document.querySelector('.total');
+        const paymentButton = document.querySelector('.payment button');
+        const amount = document.getElementById('amount');
+
+
+        let orders = [];
+        let total = 0;
+
+        // Add to order using for loop
+        for (let i = 0; i < addToOrderButtons.length; i++) {
+            addToOrderButtons[i].addEventListener('click', function () {
+                const card = addToOrderButtons[i].closest('div.flex-col');
+                const name = card.querySelector('.item-name').textContent;
+                const price = parseFloat(card.querySelector('.item-price').textContent.replace(/[^\d.]/g, ''));
+                const quantity = parseInt(card.querySelector('.item-quantity').value);
+
+                if (!quantity || quantity <= 0) {
+                    alert("Enter a valid quantity.");
+                    return;
+                }
+
+                const itemTotal = price * quantity;
+                orders.push({ name, quantity, itemTotal });
+                total += itemTotal;
+
+                updateList();
+            });
+        }
+
+
+        // to update the order list
+        function updateList() {
+            orderedList.innerHTML = '';
+            for (let i = 0; i < orders.length; i++) {
+                const item = orders[i];
+                orderedList.innerHTML += `
+                    <div class="flex justify-between w-full mb-2 border-b pb-2">
+                        <div>
+                            <h1 class="text-md font-semibold">${item.name}</h1>
+                            <p class="text-sm text-gray-600">Qty: ${item.quantity}</p>
+                        </div>
+                        <p class="text-right font-semibold">Php ${item.itemTotal.toFixed(2)}</p>
+                    </div>
+                `;
+            }
+            displayTotal.textContent = `Total: Php ${total.toFixed(2)}`;
+        }
+
+
+        // handles the payment process
+        paymentButton.addEventListener('click', () => {
+
+            const paid = parseFloat(amount.value);
+
+            if (isNaN(paid)) {
+                alert("Please enter a valid payment amount.");
+                return;
+            }
+
+            if (paid < total) {
+                alert("Not enough balance. Please try again.");
+
+            } else {
+                const change = paid - total;
+                showReceipt(paid, change);
+                resetOrder();
+            }
+            
+        });
+
+
+        // to clear everything for another transaction
+        function resetOrder() {
+            orders = [];
+            total = 0;
+            updateList();
+            amount.value = '';
+
+            // clear all quantity inside input fields
+            const quantityInputs = document.querySelectorAll('.item-quantity');
+
+            for (let i = 0; i < quantityInputs.length; i++) {
+                quantityInputs[i].value = '';
+            }
+        }
+
+        
+        // handles receipt section
+        function showReceipt(paid, change) {
+            const receipt = document.getElementById('receipt');
+            const receiptDetails = document.getElementById('receiptDetails');
+
+            let receiptHTML = '';
+            orders.forEach(item => {
+                receiptHTML += `
+                    <div class="flex justify-between mb-1">
+                        <span>${item.name} x ${item.quantity}</span>
+                        <span>Php ${item.itemTotal.toFixed(2)}</span>
+                    </div>
+                `;
+            });
+
+            receiptHTML += `
+                <hr class="my-2">
+                <div class="flex justify-between font-bold">
+                    <span>Total:</span>
+                    <span>Php ${total.toFixed(2)}</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Paid:</span>
+                    <span>Php ${paid.toFixed(2)}</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Change:</span>
+                    <span>Php ${change.toFixed(2)}</span>
+                </div>
+            `;
+
+            receiptDetails.innerHTML = receiptHTML;
+            receipt.classList.remove('hidden');
+        }
+
+        
+        // close receipt when close button is clicked
+        function closeReceipt() {
+            document.getElementById('receipt').classList.add('hidden');
+        }
+
+    </script>
+
+</body>
+</html>

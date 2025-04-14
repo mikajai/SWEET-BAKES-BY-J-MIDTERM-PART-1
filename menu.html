@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakes by J</title>
+
+    <!-- icon -->
+    <link rel="icon" href="img/sweet-bakes-icon.png" type="image/png">
+
+    <!-- tailwind script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="bg-[#EEEEEE] font-[Courier] shadow-md w-full h-20 flex items-center justify-between px-6 fixed top-0 z-50">
+        
+        <div class="right flex-grow"></div> <!-- this will act as the space to put the div middle in the center -->
+
+        <div class="middle flex items-center space-x-6 ml-20 mr-1">
+            <a href="menu.html" class="text-[#3B1E54] font-medium tracking-wider" aria-current="page">MENU</a>
+            <a href="branches.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">BRANCHES</a>
+            <a href="index.html" class="flex items-center">
+                <img src="img/name.png" class="h-12" alt="sweet bakes by j">
+            </a>
+            <a href="story.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">STORY</a>
+            <a href="faqs.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">FAQs</a>
+        </div>
+
+        <div class="left flex-grow"></div> <!-- this will act as the space to put the div middle in the center -->
+
+        <!-- user profile and cart icons -->
+        <div class="flex space-x-6">
+
+            <a href="order.html" class="flex items-center">
+                <img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" class="h-6" alt="cart icon">
+            </a>
+
+            <a href="#" class="flex items-center">
+                <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" class="h-7" alt="user icon">
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- menu section -->
+    <section id="menus" class="menus relative w-full mt-20 flex flex-col">
+        
+        <div id="menu-nav" class="menu-nav w-full h-24 flex flex-row items-center justify-center px-2 space-x-60 shadow-lg bg-[#3B1E54]">
+
+            <button id="croissantIcon" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px;">
+                <img src="https://cdn-icons-png.flaticon.com/128/5787/5787330.png" alt="croissant icon" class="h-8 w-8">
+                <h1 class="font-[Courier] text-white mt-1">Croissant</h1>
+            </button>
+    
+            <button id="pastriesIcon" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8px;">
+                <img src="https://cdn-icons-png.flaticon.com/128/4316/4316638.png" alt="pastries icon" class="h-8 w-8">
+                <h1 class="font-[Courier] text-white mt-1">Pastries</h1>
+            </button>
+    
+            <button id="CakesIcon" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <img src="https://cdn-icons-png.flaticon.com/128/2682/2682340.png" alt="cake icon" class="h-8 w-8">
+                <h1 class="font-[Courier] text-white mt-1">Cakes</h1>
+            </button>
+    
+            <button id="CoffeeIcon" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <img src="https://cdn-icons-png.flaticon.com/128/924/924514.png" alt="coffee icon" class="h-8 w-8">
+                <h1 class="font-[Courier] text-white mt-1">Drinks</h1>
+            </button>
+
+        </div>
+
+        <!-- croissant menus -->
+        <section id="menuProperC" class="bg-[#EEEEEE] flex flex-col">
+
+            <!-- header -->
+            <div class="text-center pt-8 font-serif tracking-widest uppercase text-2xl text-[#3B1E54] underline">
+                <h1>Croissants</h1>
+            </div>
+
+            <!-- menu -->
+            <div class="w-full h-[950px] grid grid-cols-2 gap-x-12 gap-y-12 px-12 py-8 items-start justify-center">
+        
+                <div class="p-6 bg-[#D4BEE4] rounded-lg shadow-lg">
+                    <div class="flex items-center mb-2">
+                        <img src="img/croissants/buttered-croissant.png" alt="buttered-croissant" class="h-32 w-32 mr-5 mb-2 shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Butter Croissant</h3>
+                            <p class="text-black font-[Courier] text-sm">Php 130.00</p>
+                        </div>
+                    </div>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Description:</b> A classic French croissant made with layers of buttery, flaky dough, offering a crisp outer shell and a soft, light interior.</p>
+                    <p class="font-[Courier] text-black text-[12px] mb-2 text-justify"><b class="text-[#3B1E54]">Storage Instructions: </b>Freshly baked croissants will last for 1 to 2 days at normal room temperature. Store at normal room temperature to maintain flakiness. Maximum of 2 hours when exposed to air. Reheat it once only.</p>
+
+                    <div class="flex flex-row gap-4 mt-6 justify-end font-[Courier]">
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Add to cart</button>
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Buy now</button>
+                    </div>
+                </div>
+        
+                <div class="p-6 bg-[#D4BEE4] rounded-lg shadow-lg">
+                    <div class="flex items-center mb-2">
+                        <img src="img/croissants/chocolate-croissant.png" alt="chocolate-croissant" class="h-32 w-32 mr-5 mb-2 shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Chocolate Croissant</h3>
+                            <p class="text-black font-[Courier] text-sm">Php 190.00</p>
+                        </div>
+                    </div>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Description:</b> Golden, flaky croissant with a generous drizzle of rich, dark chocolate glaze.</p>
+                    <p class="font-[Courier] text-black text-[12px] mb-2 text-justify"><b class="text-[#3B1E54]">Storage Instructions: </b>Freshly baked croissants will last for 1 to 2 days at normal room temperature. Store at normal room temperature to maintain flakiness. Maximum of 2 hours when exposed to air. Reheat it once only.</p>
+
+                    <div class="flex flex-row gap-4 mt-6 justify-end font-[Courier]">
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Add to cart</button>
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Buy now</button>
+                    </div>
+                </div>
+        
+                <div class="p-6 bg-[#D4BEE4] rounded-lg shadow-lg">
+                    <div class="flex items-center mb-2">
+                        <img src="img/croissants/matcha-almond-croissant.png" alt="matcha-almond-croissant" class="h-32 w-32 mr-5 mb-2 shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Matcha Almond Croissant</h3>
+                            <p class="text-black font-[Courier] text-sm">Php 330.00</p>
+                        </div>
+                    </div>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Description:</b> Flaky croissant drizzled with vibrant green matcha glaze and sprinkled with sliced almonds.</p>
+                    <p class="font-[Courier] text-black text-[12px] mb-2 text-justify"><b class="text-[#3B1E54]">Storage Instructions: </b>Freshly baked croissants will last for 1 to 2 days at normal room temperature. Store at normal room temperature to maintain flakiness. Maximum of 2 hours when exposed to air. Reheat it once only.</p>
+
+                    <div class="flex flex-row gap-4 mt-6 justify-end font-[Courier]">
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Add to cart</button>
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Buy now</button>
+                    </div>
+                </div>
+        
+                <div class="p-6 bg-[#D4BEE4] rounded-lg shadow-lg">
+                    <div class="flex items-center mb-2">
+                        <img src="img/croissants/strawberry-croissant.png" alt="strawberry-croissant" class="h-32 w-32 mr-5 mb-2 shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Strawberry Croissant</h3>
+                            <p class="text-black font-[Courier] text-sm">Php 350.00</p>
+                        </div>
+                    </div>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Description:</b> Flaky, golden croissant topped with fresh, sliced red strawberries and glaze, with a dusting of powdered sugar.</p>
+                    <p class="font-[Courier] text-black text-[12px] mb-2 text-justify"><b class="text-[#3B1E54]">Storage Instructions: </b>Freshly baked croissants will last for 1 to 2 days at normal room temperature. Store at normal room temperature to maintain flakiness. Maximum of 2 hours when exposed to air. Reheat it once only.</p>
+
+                    <div class="flex flex-row gap-4 mt-6 justify-end font-[Courier]">
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Add to cart</button>
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Buy now</button>
+                    </div>
+                </div>
+        
+                <!-- sample button only -->
+                <button id="buttonMoreSample" class="col-span-2 mx-auto bg-[#9B7EBD] w-52 h-12 hover:bg-[#3B1E54] text-[#EEEEEE] text-lg font-[Courier] px-4 tracking-widest">See More</button>
+            
+            </div>
+
+        </section>
+
+
+        <!-- pastries menus -->
+        <section id="menuProperP" class="bg-[#EEEEEE] flex flex-col">
+
+            <!-- header -->
+            <div class="text-center pt-8 font-serif tracking-widest uppercase text-2xl text-[#3B1E54] underline">
+                <h1>Pastries</h1>
+            </div>
+
+            <!-- menu -->
+            <div class="w-full h-[950px] grid grid-cols-2 gap-x-12 gap-y-12 px-12 py-8 items-start justify-center">
+        
+                <div class="p-6 bg-[#D4BEE4] rounded-lg shadow-lg">
+                    <div class="flex items-center mb-2">
+                        <img src="img/pastries/apple-tart.png" alt="apple-tart" class="h-32 w-32 mr-5 mb-2 shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Apple Tart</h3>
+                            <p class="text-black font-[Courier] text-sm">Php 130.00</p>
+                        </div>
+                    </div>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Description:</b> Buttery crust filled with sweet and spiced apple slices, baked to golden perfection.</p>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Storage Instructions: </b>Best enjoyed fresh but can be stored in a cool, dry place in an airtight container for up to 1-2 days. Do not reheat. Best enjoyed when cold.</p>
+
+                    <div class="flex flex-row gap-4 mt-6 justify-end font-[Courier]">
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Add to cart</button>
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Buy now</button>
+                    </div>
+                </div>
+        
+                <div class="p-6 bg-[#D4BEE4] rounded-lg shadow-lg">
+                    <div class="flex items-center mb-2">
+                        <img src="img/pastries/chocolate-eclair.png" alt="chocolate-croissant" class="h-32 w-32 mr-5 mb-2 shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Chocolate Eclair</h3>
+                            <p class="text-black font-[Courier] text-sm">Php 210.00</p>
+                        </div>
+                    </div>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Description:</b> A light choux pastry filled with rich chocolate pastry cream and topped with chocolate glaze.</p>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Storage Instructions: </b>Best enjoyed fresh but can be stored in a cool, dry place in an airtight container for up to 1-2 days. Do not reheat. Best enjoyed when cold.</p>
+
+                    <div class="flex flex-row gap-4 mt-6 justify-end font-[Courier]">
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Add to cart</button>
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Buy now</button>
+                    </div>
+                </div>
+        
+                <div class="p-6 bg-[#D4BEE4] rounded-lg shadow-lg">
+                    <div class="flex items-center mb-2">
+                        <img src="img/pastries/french-macaron.png" alt="french-macaron" class="h-32 w-32 mr-5 mb-2 shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">French Macarons</h3>
+                            <p class="text-black font-[Courier] text-sm">Php 510.00</p>
+                        </div>
+                    </div>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Description:</b> Delicate meringue-based cookies with a soft, chewy center, available in a variety of flavors.</p>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Storage Instructions: </b>>Best enjoyed fresh but can be stored in a cool, dry place in an airtight container for up to 1-2 days. Do not reheat. Best enjoyed when cold.</p>
+
+                    <div class="flex flex-row gap-4 mt-6 justify-end font-[Courier]">
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Add to cart</button>
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Buy now</button>
+                    </div>
+                </div>
+        
+                <div class="p-6 bg-[#D4BEE4] rounded-lg shadow-lg">
+                    <div class="flex items-center mb-2">
+                        <img src="img/pastries/matcha-creampuff.png" alt="chocolate-croissant" class="h-32 w-32 mr-5 mb-2 shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Matcha Creampuff</h3>
+                            <p class="text-black font-[Courier] text-sm">Php 330.00</p>
+                        </div>
+                    </div>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Description:</b> Delicate choux pastry shells filled with light and airy matcha-infused cream.</p>
+                    <p class="font-[Courier] text-black text-[12px] mb-6 text-justify"><b class="text-[#3B1E54]">Storage Instructions: </b>>Best enjoyed fresh but can be stored in a cool, dry place in an airtight container for up to 1-2 days. Do not reheat. Best enjoyed when cold.</p>
+
+                    <div class="flex flex-row gap-4 mt-6 justify-end font-[Courier]">
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Add to cart</button>
+                        <button class="bg-[#9B7EBD] text-[#EEEEEE] w-32 h-10 shadow-lg hover:bg-[#3B1E54]">Buy now</button>
+                    </div>
+                </div>
+        
+                <!-- sample button only -->
+                <button id="buttonMoreSample" class="col-span-2 mx-auto bg-[#9B7EBD] w-52 h-12 hover:bg-[#3B1E54] text-[#EEEEEE] text-lg font-[Courier] px-4 tracking-widest">See More</button>
+            
+            </div>
+
+        </section>
+        
+    </section>
+
+
+    <!-- footer section -->
+    <footer>
+        <div class="bg-[#3B1E54] w-full h-44 flex flex-col items-center justify-center text-white">
+            
+            <div id="footerLogo" class="footerLogo px-32">
+                <img src="img/footer-logo.png" alt="footer logo" class="h-16">
+            </div>
+
+            <div id="socials" class="socials flex items-center space-x-4">
+            <img src="https://p1media.prosperna.ph/media/66d7b8b794de763b4939bb7c/1731377063525-1716345701784-fb.webp" alt="facebook" class="h-8">
+            <img src="https://p1media.prosperna.ph/media/66d7b8b794de763b4939bb7c/1731377065537-1716345609212-tiktok.webp" alt="tiktok" class="h-8">
+            <img src="https://p1media.prosperna.ph/media/66d7b8b794de763b4939bb7c/1731377067778-1716345642482-Group%204.webp" alt="instagram" class="h-8">
+            </div>
+
+            <br> <!-- for line break only -->
+            <div id="copyright" class="copyright text-center font-[Courier] text-xs">
+                <h1>© 2025 Sweet Bakes by J. All Rights Reserved.</h1>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- javascripts -->
+    <script>
+
+        //menu preview sections
+        const croissantButtonMenu = document.getElementById('croissantIcon');
+        const pastriesButtonMenu = document.getElementById('pastriesIcon');
+        const menuProperC = document.getElementById('menuProperC');
+        const menuProperP = document.getElementById('menuProperP');
+
+
+        // function to set active button style
+        function setActiveButton(activeButton, inactiveButton) {
+            activeButton.style.backgroundColor = '#3B1E54';
+            activeButton.style.boxShadow = '0px 2px 0px #EEEEEE';
+            inactiveButton.style.backgroundColor = 'none';
+            inactiveButton.style.boxShadow = 'none';
+        }
+
+        // show croissant menu and style croissant button as active
+        menuProperC.style.display = 'block'; //to show preview
+        menuProperP.style.display = 'none';
+        setActiveButton(croissantButtonMenu, pastriesButtonMenu);
+
+        // event listener when croissant button is clicked
+        croissantButtonMenu.addEventListener('click', function() {
+            menuProperC.style.display = 'block'; // to show preview
+            menuProperP.style.display = 'none';
+            setActiveButton(croissantButtonMenu, pastriesButtonMenu);
+        });
+
+        // event listener when pastries button is clicked
+        pastriesButtonMenu.addEventListener('click', function() {
+            menuProperC.style.display = 'none';
+            menuProperP.style.display = 'block'; // to show preview
+            setActiveButton(pastriesButtonMenu, croissantButtonMenu);
+        });
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakes by J</title>
+
+    <!-- icon -->
+    <link rel="icon" href="img/sweet-bakes-icon.png" type="image/png">
+
+    <!-- tailwind script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .accordionTitle {
+            cursor: pointer;
+            width: 100%;
+            height: 80px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 5px;
+            font-family: 'Courier New';
+            font-size: 22px;
+            transition: 0.5s;
+            margin-bottom: 10px;
+            background-repeat: no-repeat;
+        }
+
+        .accordionBody {
+            font-family: 'Courier New';
+            overflow: hidden;
+            max-height: 0;
+            margin-bottom: 20px;
+            transition: 0.3s ease-out;
+        }
+
+        .accordionBody.active {
+            max-height: 1000px;
+        
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="bg-[#EEEEEE] font-[Courier] shadow-md w-full h-20 flex items-center justify-between px-6 fixed top-0 z-50">
+            
+        <div class="right flex-grow"></div> <!-- this will act as the space to put the div middle in the center -->
+
+        <div class="middle flex items-center space-x-6 ml-20 mr-1">
+            <a href="menu.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">MENU</a>
+            <a href="branches.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">BRANCHES</a>
+            <a href="index.html" class="flex items-center">
+                <img src="img/name.png" class="h-12" alt="sweet bakes by j">
+            </a>
+            <a href="story.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">STORY</a>
+            <a href="faqs.html" class="text-[#3B1E54] font-medium tracking-wider" aria-current="page">FAQs</a>
+        </div>
+
+        <div class="left flex-grow"></div> <!-- this will act as the space to put the div middle in the center -->
+
+        <!-- user profile and cart icons -->
+        <div class="flex space-x-6">
+
+            <a href="order.html" class="flex items-center">
+                <img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" class="h-6" alt="cart icon">
+            </a>
+
+            <a href="#" class="flex items-center">
+                <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" class="h-7" alt="user icon">
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- faqs header -->
+    <section class="story-header">
+
+        <div class="container relative max-w-full h-96 mt-20 flex items-center justify-center text-white shadow-lg">
+            <img src="img/faqs-header.png" alt="Sweet Bakes by J Story Header" class="h-full w-full object-cover absolute top-0 left-0">
+    
+            <div class="relative z-10 text-left flex items-center justify-center w-full h-20 mr-64">
+                <h1 class="text-5xl font-[Courier] tracking-wide uppercase text-[#3B1E54]">Sweet Bakes by J <br> Frequently Asked Questions</h1>
+            </div>
+    
+        </div>
+    
+    </section>
+
+
+    <!-- faqs -->
+    <section id="branches-accordions" class="px-32 py-12 bg-[#EEEEEE]">
+
+        <!-- question 1 -->
+        <div class="accordionItem">
+
+            <button class="accordionTitle uppercase shadow-lg" style="background-image: url(img/accordion.png);">What kind of baked goods do you offer at Sweet Bakes by J?</button>
+
+            <div id="accordionBody" class="accordionBody bg-[#EEEEEE] text-center px-20">
+                We specialize in a delightful range of croissants, pastries, and custom cakes. Our menu also includes a selection of breads and other sweet treats.
+            </div>
+
+        </div>
+
+        <!-- question 2 -->
+        <div class="accordionItem">
+
+            <button class="accordionTitle uppercase shadow-lg" style="background-image: url(img/accordion.png);">Do you offer beverages at your cafe?</button>
+
+            <div id="accordionBody" class="accordionBody bg-[#EEEEEE] text-center px-20">
+                Yes, we do! We serve a variety of comforting beverages including freshly brewed coffees, a selection of fragrant teas, and other refreshing drinks.
+            </div>
+
+        </div>
+
+        <!-- question 3 -->
+        <div class="accordionItem">
+
+            <button class="accordionTitle uppercase shadow-lg" style="background-image: url(img/accordion.png);">Can I place a custom cake order for special occasions?</button>
+
+            <div id="accordionBody" class="accordionBody bg-[#EEEEEE] text-center px-20">
+                Absolutely! We love creating custom cakes for birthdays, weddings, and other celebrations. Please visit our "Cakes" page or contact us directly to discuss your design and flavor preferences.
+            </div>
+
+        </div>
+
+        <!-- question 4 -->
+        <div class="accordionItem">
+
+            <button class="accordionTitle uppercase shadow-lg" style="background-image: url(img/accordion.png);">Do you have different branches? Where are they located?</button>
+
+            <div id="accordionBody" class="accordionBody bg-[#EEEEEE] text-center px-20">
+                Yes, we have multiple locations. Our current branches are in Imus, Alabang, España, and Tagaytay. Please visit our "Branches" page for specific addresses and contact information.
+            </div>
+
+        </div>
+
+        <!-- question 5 -->
+        <div class="accordionItem">
+
+            <button class="accordionTitle uppercase shadow-lg" style="background-image: url(img/accordion.png);">Do you offer vegetarian or vegan options?</button>
+
+            <div id="accordionBody" class="accordionBody bg-[#EEEEEE] text-center px-20">
+                Currently, our primary focus is on traditional baked goods. However, we are always exploring new recipes and may introduce more diverse options in the future. Please check our menu for current offerings.
+            </div>
+
+        </div>
+
+        <!-- question 6 -->
+        <div class="accordionItem">
+
+            <button class="accordionTitle uppercase shadow-lg" style="background-image: url(img/accordion.png);">Can I place an order for pickup or delivery?</button>
+
+            <div id="accordionBody" class="accordionBody bg-[#EEEEEE] text-center px-20">
+                Yes, you can place orders for pickup at your preferred branch. We also offer delivery services within certain areas. Please check our website or contact your local branch for delivery options and coverage.
+            </div>
+
+        </div>
+
+        <!-- question 7 -->
+        <div class="accordionItem">
+
+            <button class="accordionTitle uppercase shadow-lg" style="background-image: url(img/accordion.png);">What are your operating hours?</button>
+
+            <div id="accordionBody" class="accordionBody bg-[#EEEEEE] text-center px-20">
+                Our operating hours vary slightly by branch. Please visit the specific "Branches" page on our website for the most up-to-date hours for each location.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- inquiries and feedback form section-->
+    <section class="relative w-full h-screen bg-[#EEEEEE]">
+
+        <h1 class="text-center font-[Courier] text-[#3B1E54] text-xl"> Inquiries and Feedback Form </h1>
+
+        <form class="bg-gray-100 p-6 border border-gray-300 w-[1080px] mx-auto font-[Courier] my-5 rounded-md">
+
+            <div class="mb-4">
+              <label for="firstName" class="text-[#3B1E54] text-sm font-bold mb-2 tracking-wide">First Name</label>
+              <input type="text" id="firstName" class="shadow border rounded w-full py-2 px-3 text-black">
+            </div>
+          
+            <div class="mb-4">
+              <label for="lastName" class="text-[#3B1E54] text-sm font-bold mb-2 tracking-wide">Last Name</label>
+              <input type="text" id="lastName" class="shadow border rounded w-full py-2 px-3 text-black">
+            </div>
+          
+            <div class="mb-4">
+              <label for="email" class="text-[#3B1E54] text-sm font-bold mb-2 tracking-wide">Email Address</label>
+              <input type="email" id="email" class="shadow border rounded w-full py-2 px-3 text-black">
+            </div>
+          
+            <div class="mb-4">
+              <label for="comment" class="text-[#3B1E54] text-sm font-bold mb-2 tracking-wide">Leave a Comment</label>
+              <textarea id="comment" maxlength="150" class="shadow border rounded w-full py-2 px-3 text-black h-24"></textarea>
+              <p class="text-gray-500 text-xs italic">0 of 150 characters used</p>
+            </div>
+          
+            <div class="flex justify-end">
+                <button type="submit" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white font-[Courier] py-2 px-4 rounded tracking-wider">Submit</button>
+            </div>
+        </form>
+
+
+    </section>
+
+    
+    <!-- footer section -->
+    <footer>
+        <div class="bg-[#3B1E54] w-full h-44 flex flex-col items-center justify-center text-white">
+            
+            <div id="footerLogo" class="footerLogo px-32">
+                <img src="img/footer-logo.png" alt="footer logo" class="h-16">
+            </div>
+
+            <div id="socials" class="socials flex items-center space-x-4">
+            <img src="https://p1media.prosperna.ph/media/66d7b8b794de763b4939bb7c/1731377063525-1716345701784-fb.webp" alt="facebook" class="h-8">
+            <img src="https://p1media.prosperna.ph/media/66d7b8b794de763b4939bb7c/1731377065537-1716345609212-tiktok.webp" alt="tiktok" class="h-8">
+            <img src="https://p1media.prosperna.ph/media/66d7b8b794de763b4939bb7c/1731377067778-1716345642482-Group%204.webp" alt="instagram" class="h-8">
+            </div>
+
+            <br> <!-- for line break only -->
+            <div id="copyright" class="copyright text-center font-[Courier] text-xs">
+                <h1>© 2025 Sweet Bakes by J. All Rights Reserved.</h1>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- javascripts -->
+    <script>
+
+        // to view accordionBodies
+        const accordionTitle = document.querySelectorAll('.accordionTitle');
+        const accordionBody = document.querySelectorAll('.accordionBody');
+
+		for (let i = 0; i < accordionTitle.length; i++) {
+			accordionTitle[i].addEventListener('click', function (event) {
+				let accordionItem = this.closest('.accordionItem').querySelector('.accordionBody');
+				accordionItem.classList.toggle('active');
+			})
+		}
+
+    </script>
+
+</body>
+</html>

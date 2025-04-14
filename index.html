@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakes by J</title>
+
+    <!-- icon -->
+    <link rel="icon" href="img/sweet-bakes-icon.png" type="image/png">
+
+    <!-- tailwind script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <!-- welcome message -->
+    <div class="bg-[#9B7EBD] w-full text-center py-0 text-[#EEEEEE] text-sm font-[Courier] fixed top-0 z-50">
+        <p class="py-3 text-center font-[Courier] text-sm">Welcome to Sweet Bakes by J, where every bite is a delight! Enjoy same-day delivery or pre-order for later.</p>
+    </div>
+
+    <!-- navigation bar -->
+    <nav class="bg-[#EEEEEE] font-[Courier] shadow-md w-full h-20 flex items-center justify-between px-6 fixed top-10 z-40">
+        
+        <div class="right flex-grow"></div> <!-- this will act as the space to put the div middle in the center -->
+
+        <div class="middle flex items-center space-x-6 ml-20 mr-1">
+            <a href="menu.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">MENU</a>
+            <a href="branches.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">BRANCHES</a>
+            <a href="index.html" class="flex items-center">
+                <img src="img/name.png" class="h-12" alt="sweet bakes by j">
+            </a>
+            <a href="story.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">STORY</a>
+            <a href="faqs.html" class="text-[#9B7EBD] hover:text-[#3B1E54] font-medium tracking-wider">FAQs</a>
+        </div>
+
+        <div class="left flex-grow"></div> <!-- this will act as the space to put the div middle in the center -->
+
+        <!-- user profile and cart icons -->
+        <div class="flex space-x-6">
+            <a href="order.html" class="flex items-center">
+                <img src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png" class="h-6" alt="cart icon">
+            </a>
+            <a href="#" class="flex items-center">
+                <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" class="h-7" alt="user icon">
+            </a>
+        </div>
+
+    </nav>
+
+
+    <!-- header section -->
+    <section id="header" class="header w-full h-screen">
+
+        <!-- background image -->
+        <img src="img/header.png" alt="header" class="absolute inset-0 w-full h-full object-cover z-0">
+      
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <a href="#croissant-pastry-header" class="mt-64 inline-block px-8 py-3 text-sm font-[Courier] text-white bg-[#3B1E54] rounded-full
+            hover:bg-[#EEEEEE] hover:text-[#3B1E54] transition duration-300 text-center">ORDER NOW</a>
+        </div>
+
+    </section>
+
+
+    <!-- croissant and pastries header section -->
+    <section id="croissant-pastry-header" class="croissant-pastry-header relative w-full">
+
+        <div class="container max-w-full h-20 grid grid-cols-2 bg-[#3B1E54] text-white font-[Courier] items-center px-48">
+
+            <div class="text-center">
+                <button id="croissantHeader" class="text-lg tracking-widest h-full w-full flex items-center justify-center">CROISSANTS</button>
+            </div>
+
+            <div class="text-center">
+                <button id="pastriesHeader" class="text-lg tracking-widest h-full w-full flex items-center justify-center">PASTRIES</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- croissant preview section -->
+    <section id="croissantPreview" class="relative w-full">
+
+        <div class="container flex items-center">
+
+            <div class="w-2/5 pr-8">
+                <img src="https://plus.unsplash.com/premium_photo-1661351637185-162e386528a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y3JvaXNzYW50fGVufDB8MXwwfHx8MA%3D%3D" alt="Cpreviewphoto" class="w-full shadow-md">
+            </div>
+
+            <div class="w-3/5 grid grid-cols-2 gap-4">
+
+                <!-- buttered croissant -->
+                <div class="container p-6">
+                    <div class="flex items-center mb-2">
+                        <img src="img/croissants/buttered-croissant.png" alt="buttered-croissant" class="h-24 w-24 mr-5 mb-2 shadow-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Butter Croissant</h3>
+                            <p class="text-black font-[Courier]  text-sm">Php 130.00</p>
+                        </div>
+                    </div>
+                    <p class="text-black text-[12px] mb-6 text-justify font-[Courier]">A classic French croissant made with layers of buttery, flaky dough, offering a crisp outer shell and a soft, light interior.</p>
+                    <a href="menu.html" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-xs font-[Courier] py-3 px-4 rounded-full tracking-wider">Click here to Order</a>
+                </div>
+
+
+                <!-- chocolate croissant -->
+                <div class="container p-6">
+                    <div class="flex items-center mb-2">
+                        <img src="img/croissants/chocolate-croissant.png" alt="chocolate-croissant" class="h-24 w-24 mr-5 mb-2 shadow-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Chocolate Croissant</h3>
+                            <p class="text-black font-[Courier]  text-sm">Php 190.00</p>
+                        </div>
+                    </div>
+                    <p class="text-black text-[12px] mb-6 text-justify font-[Courier]">Golden, flaky croissant with a generous drizzle of rich, dark chocolate glaze.</p>
+                    <a href="menu.html" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-xs font-[Courier] py-3 px-4 rounded-full tracking-wider">Click here to Order</a>
+                </div>
+
+
+                <!-- strawberry croissant -->
+                <div class="container p-6">
+                    <div class="flex items-center mb-2">
+                        <img src="img/croissants/strawberry-croissant.png" alt="strawberry-croissant" class="h-24 w-24 mr-5 mb-2 shadow-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Strawberry Croissant</h3>
+                            <p class="text-black font-[Courier]  text-sm">Php 350.00</p>
+                        </div>
+                    </div>
+                    <p class="text-black text-[12px] mb-6 text-justify font-[Courier]">Flaky, golden croissant topped with fresh, sliced red strawberries and glaze, with a dusting of powdered sugar.</p>
+                    <a href="menu.html" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-xs font-[Courier] py-3 px-4 rounded-full tracking-wider">Click here to Order</a>
+                </div>
+
+
+                 <!-- matcha almond croissant -->
+                <div class="container p-6">
+                    <div class="flex items-center mb-2">
+                        <img src="img/croissants/matcha-almond-croissant.png" alt="matcha-almond-croissant" class="h-24 w-24 mr-5 mb-2 shadow-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Matcha Almond Croissant</h3>
+                            <p class="text-black font-[Courier]  text-sm">Php 330.00</p>
+                        </div>
+                    </div>
+                    <p class="text-black text-[12px] mb-6 text-justify font-[Courier]">Flaky croissant drizzled with vibrant green matcha glaze and sprinkled with sliced almonds.</p>
+                    <a href="menu.html" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-xs font-[Courier] py-3 px-4 rounded-full tracking-wider">Click here to Order</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- pastries preview section -->
+    <section id="pastriesPreview" class="relative w-full" style="display: none;">
+
+        <div class="container flex items-center">
+
+            <div class="w-2/5 pr-8">
+                <img src="https://images.unsplash.com/photo-1718658667221-c8301a07b2f2?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ppreviewphoto" class="w-full shadow-md">
+            </div>
+
+            <div class="w-3/5 grid grid-cols-2 gap-4 mb-4">
+
+                <!-- apple tart -->
+                <div class="container p-6">
+                    <div class="flex items-center mb-2">
+                        <img src="img/pastries/apple-tart.png" alt="apple-tart" class="h-24 w-24 mr-5 mb-2 shadow-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Apple Tart</h3>
+                            <p class="text-black font-[Courier]  text-sm">Php 130.00</p>
+                        </div>
+                    </div>
+                    <p class="text-black text-[12px] mb-6 text-justify font-[Courier]">Buttery crust filled with sweet and spiced apple slices, baked to golden perfection.</p>
+                    <a href="menu.html" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-xs font-[Courier] py-3 px-4 rounded-full tracking-wider">Click here to Order</a>
+                </div>
+
+
+                <!-- chocolate eclair -->
+                <div class="container p-6">
+                    <div class="flex items-center mb-2">
+                        <img src="img/pastries/chocolate-eclair.png" alt="chocolate-eclair" class="h-24 w-24 mr-5 mb-2 shadow-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Chocolate Eclair</h3>
+                            <p class="text-black font-[Courier]  text-sm">Php 210.00</p>
+                        </div>
+                    </div>
+                    <p class="text-black text-[12px] mb-6 text-justify font-[Courier]">A light choux pastry filled with rich chocolate pastry cream and topped with chocolate glaze.</p>
+                    <a href="menu.html" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-xs font-[Courier] py-3 px-4 rounded-full tracking-wider">Click here to Order</a>
+                </div>
+
+
+                <!-- french macaron -->
+                <div class="container p-6">
+                    <div class="flex items-center mb-2">
+                        <img src="img/pastries/french-macaron.png" alt="french-macaron" class="h-24 w-24 mr-5 mb-2 shadow-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">French Macaron</h3>
+                            <p class="text-black font-[Courier]  text-sm">Php 510.00</p>
+                        </div>
+                    </div>
+                    <p class="text-black text-[12px] mb-6 text-justify font-[Courier]">Delicate meringue-based cookies with a soft, chewy center, available in a variety of flavors.</p>
+                    <a href="menu.html" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-xs font-[Courier] py-3 px-4 rounded-full tracking-wider">Click here to Order</a>
+                </div>
+
+
+                <!-- matcha creampuff -->
+                <div class="container p-6">
+                    <div class="flex items-center mb-2">
+                        <img src="img/pastries/matcha-creampuff.png" alt="matcha-creampuff" class="h-24 w-24 mr-5 mb-2 shadow-lg">
+                        <div>
+                            <h3 class="text-xl font-semibold font-[Courier] text-[#3B1E54] mb-2">Matcha Creampuff</h3>
+                            <p class="text-black font-[Courier]  text-sm">Php 330.00</p>
+                        </div>
+                    </div>
+                    <p class="text-black text-[12px] mb-6 text-justify font-[Courier]">Delicate choux pastry shells filled with light and airy matcha-infused cream.</p>
+                    <a href="menu.html" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-xs font-[Courier] py-3 px-4 rounded-full tracking-wider">Click here to Order</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- location imus section -->
+    <section id="locationA" class="locationA relative max-w-full h-[700px] bg-[#EEEEEE] flex items-start justify-center py-12 px-36">
+
+        <div class="flex items-center font-[Courier]">
+
+            <img src="https://images.unsplash.com/photo-1559941003-4f656f95b734?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fGNhZmV8ZW58MHwxfDB8fHww" alt="Cafe in Imus" class="w-[1300px] h-[600px] shadow-lg mr-8">
+
+            <div class="flex flex-col">
+
+                <h1 id="locationHeader" class="text-5xl font-semibold text-[#3B1E54] uppercase tracking-wider">Opening Hours and Location</h1>
+                <p id="locationName" class="text-3xl font-semibold text-black mt-2 uppercase mb-6 tracking-widest">Imus</p>
+
+                <p id="locationDescription" class="text-lg text-black mt-2 mb-8">Step into the bright and airy haven of Sweet Bakes by J, where the aroma of freshly baked pastries and expertly brewed coffee welcomes you!</p>
+
+                <p id="locationTime" class="text-lg text-[#3B1E54] mt-2 mb-12">Open Daily | 7:00 AM - 10:00 PM</p>
+
+                <p id="locationContact" class="text-lg text-[#3B1E54] mt-2">09123987465 | sweetbakesbyj.imus@gmail.com</p>
+
+                <div id="buttonDirectionA" class="buttonDirectionA flex flex-row mt-12 gap-5">
+                    <a href="#" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] py-3 px-4 tracking-wider">Click here for Directions</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- location alabang section -->
+    <section id="locationB" class="locationB relative max-w-full h-[700px] bg-[#EEEEEE] flex items-start justify-center py-12 px-36">
+
+        <div class="flex items-center font-[Courier]">
+
+            <img src="https://plus.unsplash.com/premium_photo-1664970900025-1e3099ca757a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FmZXxlbnwwfDF8MHx8fDA%3D" alt="Cafe in Alabang" class="w-[1300px] h-[600px] shadow-lg mr-8">
+
+            <div class="flex flex-col">
+
+                <h1 id="locationHeader" class="text-5xl font-semibold text-[#3B1E54] uppercase tracking-wider">Opening Hours and Location</h1>
+                <p id="locationName" class="text-3xl font-semibold text-black mt-2 uppercase mb-6 tracking-widest">Alabang</p>
+
+                <p id="locationDescription" class="text-lg text-black mt-2 mb-8">Step into the bright and airy haven of Sweet Bakes by J, where the aroma of freshly baked pastries and expertly brewed coffee welcomes you!</p>
+
+                <p id="locationTime" class="text-lg text-[#3B1E54] mt-2 mb-12">Open Daily | 6:00 AM - 9:00 PM</p>
+
+                <p id="locationContact" class="text-lg text-[#3B1E54] mt-2">09123456789 | sweetbakesbyj.alabang@gmail.com</p>
+
+                <div id="buttonDirectionA" class="buttonDirectionA flex flex-row mt-12 gap-5">
+                    <a href="#" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] py-3 px-4 tracking-wider">Click here for Directions</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- location españa section -->
+    <section id="locationC" class="locationC relative max-w-full h-[700px] bg-[#EEEEEE] flex items-start justify-center py-12 px-36">
+
+        <div class="flex items-center font-[Courier]">
+
+            <img src="https://images.unsplash.com/photo-1522120331923-bd99e51eb26e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fGNhZmV8ZW58MHwxfDB8fHww" alt="Cafe in España" class="w-[1300px] h-[600px] shadow-lg mr-8">
+
+            <div class="flex flex-col">
+
+                <h1 id="locationHeader" class="text-5xl font-semibold text-[#3B1E54] uppercase tracking-wider">Opening Hours and Location</h1>
+                <p id="locationName" class="text-3xl font-semibold text-black mt-2 uppercase mb-6 tracking-widest">España</p>
+
+                <p id="locationDescription" class="text-lg text-black mt-2 mb-8">Step into the bright and airy haven of Sweet Bakes by J, where the aroma of freshly baked pastries and expertly brewed coffee welcomes you!</p>
+
+                <p id="locationTime" class="text-lg text-[#3B1E54]">Monday - Thursday, Sunday| 7:00 AM - 8:00 PM</p>
+                <p id="locationTime" class="text-lg text-[#3B1E54] mb-8">Friday - Saturday| 7:00AM - 10:00PM</p>
+
+                <p id="locationContact" class="text-lg text-[#3B1E54] mt-2">09987654321 | sweetbakesbyj.españa@gmail.com</p>
+
+                <div id="buttonDirectionA" class="buttonDirectionA flex flex-row mt-12 gap-5">
+                    <a href="#" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] py-3 px-4 tracking-wider">Click here for Directions</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- location tagaytay section -->
+    <section id="locationD" class="locationD relative max-w-full h-[700px] bg-[#EEEEEE] flex items-start justify-center py-12 px-36">
+
+        <div class="flex items-center font-[Courier]">
+
+            <img src="https://plus.unsplash.com/premium_photo-1664192424225-86fac8067d2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTU5fHxjYWZlfGVufDB8MXwwfHx8MA%3D%3D" alt="Cafe in Tagaytay" class="w-[1300px] h-[600px] shadow-lg mr-8">
+
+            <div class="flex flex-col">
+
+                <h1 id="locationHeader" class="text-5xl font-semibold text-[#3B1E54] uppercase tracking-wider">Opening Hours and Location</h1>
+                <p id="locationName" class="text-3xl font-semibold text-black mt-2 uppercase mb-6 tracking-widest">Tagaytay</p>
+
+                <p id="locationDescription" class="text-lg text-black mt-2 mb-8">Step into the bright and airy haven of Sweet Bakes by J, where the aroma of freshly baked pastries and expertly brewed coffee welcomes you!</p>
+
+                <p id="locationTime" class="text-lg text-[#3B1E54]">Monday - Thursday | 7:00 AM - 10:00 PM</p>
+                <p id="locationTime" class="text-lg text-[#3B1E54] mb-8">Friday - Sunday | 7:00AM - 11:00PM</p>
+
+                <p id="locationContact" class="text-lg text-[#3B1E54] mt-2">09123498765 | sweetbakesbyj.tagaytay@gmail.com</p>
+
+                <div id="buttonDirectionA" class="buttonDirectionA flex flex-row mt-12 gap-5">
+                    <a href="#" class="bg-[#9B7EBD] hover:bg-[#3B1E54] text-white text-sm font-[Courier] py-3 px-4 tracking-wider">Click here for Directions</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- location buttons -->
+    <section>
+
+        <div id="LocationButtons" class="relative bg-[#EEEEEE] max-w-full h-24">
+
+            <div id="buttonDirection" class="buttonDirection flex flex-row justify-center space-x-12">
+                <button id="buttonImus" class="bg-[#9B7EBD] w-64 h-14 hover:bg-[#3B1E54] text-[#EEEEEE] text-xl font-[Courier] py-3 px-4 tracking-widest uppercase">Imus</button>
+
+                <button id="buttonAlabang" class="bg-[#9B7EBD] w-64 h-14 hover:bg-[#3B1E54] text-[#EEEEEE] text-xl font-[Courier] py-3 px-4 tracking-widest uppercase">Alabang</button>
+
+                <button id="buttonEspaña" class="bg-[#9B7EBD] w-64 hover:bg-[#3B1E54] text-[#EEEEEE] text-xl font-[Courier] py-3 px-4 tracking-widest uppercase">España</button>
+
+                <button id="buttonTagaytay" class="bg-[#9B7EBD] w-64 hover:bg-[#3B1E54] text-[#EEEEEE] text-xl font-[Courier] py-3 px-4 tracking-widest uppercase">Tagaytay</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- footer section -->
+    <footer>
+
+        <div class="bg-[#3B1E54] w-full h-44 flex flex-col items-center justify-center text-white">
+            
+            <div id="footerLogo" class="footerLogo px-32">
+                <img src="img/footer-logo.png" alt="footer logo" class="h-16">
+            </div>
+    
+            <div id="socials" class="socials flex items-center space-x-4">
+               <img src="https://p1media.prosperna.ph/media/66d7b8b794de763b4939bb7c/1731377063525-1716345701784-fb.webp" alt="facebook" class="h-8">
+               <img src="https://p1media.prosperna.ph/media/66d7b8b794de763b4939bb7c/1731377065537-1716345609212-tiktok.webp" alt="tiktok" class="h-8">
+               <img src="https://p1media.prosperna.ph/media/66d7b8b794de763b4939bb7c/1731377067778-1716345642482-Group%204.webp" alt="instagram" class="h-8">
+            </div>
+
+            <br> <!-- for line break only -->
+
+            <div id="copyright" class="copyright text-center font-[Courier] text-xs">
+                <h1>© 2025 Sweet Bakes by J. All Rights Reserved.</h1>
+            </div>
+
+        </div>
+
+    </footer>
+
+   
+    <!-- javascripts -->
+    <script>
+        
+        //preview sections
+        const croissantButton = document.getElementById('croissantHeader');
+        const pastriesButton = document.getElementById('pastriesHeader');
+        const croissantPreview = document.getElementById('croissantPreview');
+        const pastriesPreview = document.getElementById('pastriesPreview');
+
+        // show croissant preview section and hide pastries preview section
+        croissantPreview.style.display = 'block';
+        pastriesPreview.style.display = 'none';
+
+        // event listener when croissant button is clicked
+        croissantButton.addEventListener('click', function() {
+            croissantPreview.style.display = 'block'; // to show preview
+            pastriesPreview.style.display = 'none';
+        });
+
+        // event listener when pastries button is clicked
+        pastriesButton.addEventListener('click', function() {
+            croissantPreview.style.display = 'none';
+            pastriesPreview.style.display = 'block'; // to show preview
+        });
+
+
+       // location preview section
+        const locationASection = document.getElementById('locationA');
+        const locationBSection = document.getElementById('locationB');
+        const locationCSection = document.getElementById('locationC');
+        const locationDSection = document.getElementById('locationD');
+
+        const buttonImus = document.getElementById('buttonImus');
+        const buttonAlabang = document.getElementById('buttonAlabang');
+        const buttonEspaña = document.getElementById('buttonEspaña');
+        const buttonTagaytay = document.getElementById('buttonTagaytay');
+
+        function setActiveButton(activeButton, inactiveButton1, inactiveButton2, inactiveButton3) {
+        activeButton.style.backgroundColor = '#3B1E54';
+        inactiveButton1.style.backgroundColor = '#9B7EBD';
+        inactiveButton2.style.backgroundColor = '#9B7EBD';
+        inactiveButton3.style.backgroundColor = '#9B7EBD';
+    }
+
+        //show Alabang and make its button active
+        locationASection.style.display = 'block';
+        locationBSection.style.display = 'none';
+        locationCSection.style.display = 'none';
+        locationDSection.style.display = 'none';
+        setActiveButton(buttonImus, buttonAlabang, buttonEspaña, buttonTagaytay);
+
+        // event listener when imus button is clicked
+        buttonImus.addEventListener('click', function() {
+            locationASection.style.display = 'block';
+            locationBSection.style.display = 'none';
+            locationCSection.style.display = 'none';
+            locationDSection.style.display = 'none';
+            setActiveButton(buttonImus, buttonAlabang, buttonEspaña, buttonTagaytay);
+        });
+
+        // event listener when alabang button is clicked
+        buttonAlabang.addEventListener('click', function() {
+            locationASection.style.display = 'none';
+            locationBSection.style.display = 'block';
+            locationCSection.style.display = 'none';
+            locationDSection.style.display = 'none';
+            setActiveButton(buttonAlabang, buttonEspaña, buttonTagaytay, buttonImus);
+        });
+
+        // // event listener when espana button is clicked
+        buttonEspaña.addEventListener('click', function() {
+            locationASection.style.display = 'none';
+            locationBSection.style.display = 'none';
+            locationCSection.style.display = 'block';
+            locationDSection.style.display = 'none';
+            setActiveButton(buttonEspaña, buttonTagaytay, buttonImus, buttonAlabang);
+        });
+
+        // // event listener when tagaytay button is clicked
+        buttonTagaytay.addEventListener('click', function() {
+            locationASection.style.display = 'none';
+            locationBSection.style.display = 'none';
+            locationCSection.style.display = 'none';
+            locationDSection.style.display = 'block';
+            setActiveButton(buttonTagaytay, buttonImus, buttonAlabang, buttonEspaña);
+        });
+        
+    </script>
+
+</body>
+</html>
